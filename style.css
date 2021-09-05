@@ -18,6 +18,7 @@ body{
 	max-width: 100%;
 	height: 100%;
 	position: relative;
+	overflow-x:hidden;
 }
 ul{
 	list-style: none;
@@ -42,8 +43,8 @@ display: flex;
 font-size: 1.2rem;
 color: hsl(0, 0%, 100%);
 align-items: center;
-padding: 5rem 0;
-padding-left: 2rem;
+/*padding: 5rem 0;*/
+padding: 5rem 0 5rem 5rem;
 /*background-color: white;	*/
 position: absolute;
 }
@@ -53,6 +54,7 @@ font-size: 2rem;
 font-weight: 600;
 }
 .item{
+	font-size: 1.2rem;
 padding: 0 3rem;
 }
 
@@ -211,7 +213,7 @@ font-size: 1.2rem;
 
 @media (max-width: 500px){
 	html{
-		font-size:40%;
+		font-size:50%;
 	}
 	.click{
 		left: unset;
@@ -225,6 +227,10 @@ font-size: 1.2rem;
 		position: absolute;
 		z-index: 2;
 	}
+	.list .item:nth-child(2){
+		display: none;
+	}
+
 	.list__mobile{
 		position: absolute;
 		z-index: 1;
